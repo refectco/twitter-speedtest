@@ -66,3 +66,6 @@ node_modules/
 
 # firebase configuration
 .firebaserc
+
+# firebase service account
+app/serviceAccountKey.json
