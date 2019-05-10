@@ -71,7 +71,5 @@ node_modules/
 app/serviceAccountKey.json
 
 # speedtest results folder
+speedtest/results/*.json
 !speedtest/results/.gitkeep
-
-# but none of the logs
-speedtest/results/*
