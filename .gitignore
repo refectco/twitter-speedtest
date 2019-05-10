@@ -71,5 +71,5 @@ node_modules/
 app/serviceAccountKey.json
 
 # speedtest results folder
-speedtest/results/*.json
-!speedtest/results/.gitkeep
+app/speedtest/results/*.json
+!app/speedtest/results/.gitkeep
