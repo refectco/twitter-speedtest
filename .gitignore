@@ -69,3 +69,9 @@ node_modules/
 
 # firebase service account
 app/serviceAccountKey.json
+
+# speedtest results folder
+!speedtest/results/.gitkeep
+
+# but none of the logs
+speedtest/results/*
