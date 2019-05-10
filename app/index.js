@@ -23,4 +23,4 @@ console.log(`download ${download / 1048576} MiB/s`);
 console.log(`upload ${upload / 1048576} MiB/s`);
 
 // optional 
-fs.writeFileSync(`${__dirname}/speedtest/results/${json.timestamp}`, result);
+fs.writeFileSync(`${__dirname}/speedtest/results/${json.timestamp}.json`, result);
