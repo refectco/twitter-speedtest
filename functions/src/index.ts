@@ -34,9 +34,16 @@ exports.tweet = functions.firestore
         const price = (download / 1048576) * (MONTHLY_PAYMENT/DOWNLOAD_SPEED);
         const refund = MONTHLY_PAYMENT - price;
 
+        // logging
+        console.log(mib);
+        console.log(price);
+        console.log(refund);
+
         // configure your tweet here
-        let status = `Based on my speedtest results: ${mib.toFixed(2)} MiB/s - I should be paying $${price.toFixed(2)} instead of $44.99.`;
-        status += ` @GetSpectrum can I get a refund of $${refund.toFixed(2)}?`;
+        // let status = `Based on my speedtest results: ${mib.toFixed(2)} Mbps - I should be paying $${price.toFixed(2)} instead of $44.99.`;
+        // status += ` @GetSpectrum can I get a refund of $${refund.toFixed(2)}?`;
+
+        const status = `Speedtest results: ${mib.toFixed(2)} Mbps`;
        
         return client.post('statuses/update', {status: status});
     });
